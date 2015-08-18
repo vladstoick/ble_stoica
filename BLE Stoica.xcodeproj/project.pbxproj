@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		727306BA1B83CAA700FCDE09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727306B91B83CAA700FCDE09 /* AppDelegate.swift */; };
+		727306BC1B83CAA700FCDE09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727306BB1B83CAA700FCDE09 /* ViewController.swift */; };
+		727306BF1B83CAA700FCDE09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 727306BD1B83CAA700FCDE09 /* Main.storyboard */; };
+		727306C11B83CAA700FCDE09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727306C01B83CAA700FCDE09 /* Assets.xcassets */; };
+		727306C41B83CAA700FCDE09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 727306C21B83CAA700FCDE09 /* LaunchScreen.storyboard */; };
+		727306CF1B83CAA800FCDE09 /* BLE_StoicaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727306CE1B83CAA800FCDE09 /* BLE_StoicaTests.swift */; };
+		727306DA1B83CAA800FCDE09 /* BLE_StoicaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727306D91B83CAA800FCDE09 /* BLE_StoicaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		727306CB1B83CAA800FCDE09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 727306AE1B83CAA700FCDE09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 727306B51B83CAA700FCDE09;
+			remoteInfo = "BLE Stoica";
+		};
+		727306D61B83CAA800FCDE09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 727306AE1B83CAA700FCDE09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 727306B51B83CAA700FCDE09;
+			remoteInfo = "BLE Stoica";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		727306B61B83CAA700FCDE09 /* BLE Stoica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLE Stoica.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		727306B91B83CAA700FCDE09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		727306BB1B83CAA700FCDE09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		727306BE1B83CAA700FCDE09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		727306C01B83CAA700FCDE09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		727306C31B83CAA700FCDE09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		727306C51B83CAA700FCDE09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		727306CA1B83CAA800FCDE09 /* BLE StoicaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BLE StoicaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		727306CE1B83CAA800FCDE09 /* BLE_StoicaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLE_StoicaTests.swift; sourceTree = "<group>"; };
+		727306D01B83CAA800FCDE09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		727306D51B83CAA800FCDE09 /* BLE StoicaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BLE StoicaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		727306D91B83CAA800FCDE09 /* BLE_StoicaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLE_StoicaUITests.swift; sourceTree = "<group>"; };
+		727306DB1B83CAA800FCDE09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		727306B31B83CAA700FCDE09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		727306C71B83CAA800FCDE09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		727306D21B83CAA800FCDE09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		727306AD1B83CAA700FCDE09 = {
+			isa = PBXGroup;
+			children = (
+				727306B81B83CAA700FCDE09 /* BLE Stoica */,
+				727306CD1B83CAA800FCDE09 /* BLE StoicaTests */,
+				727306D81B83CAA800FCDE09 /* BLE StoicaUITests */,
+				727306B71B83CAA700FCDE09 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		727306B71B83CAA700FCDE09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				727306B61B83CAA700FCDE09 /* BLE Stoica.app */,
+				727306CA1B83CAA800FCDE09 /* BLE StoicaTests.xctest */,
+				727306D51B83CAA800FCDE09 /* BLE StoicaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		727306B81B83CAA700FCDE09 /* BLE Stoica */ = {
+			isa = PBXGroup;
+			children = (
+				727306B91B83CAA700FCDE09 /* AppDelegate.swift */,
+				727306BB1B83CAA700FCDE09 /* ViewController.swift */,
+				727306BD1B83CAA700FCDE09 /* Main.storyboard */,
+				727306C01B83CAA700FCDE09 /* Assets.xcassets */,
+				727306C21B83CAA700FCDE09 /* LaunchScreen.storyboard */,
+				727306C51B83CAA700FCDE09 /* Info.plist */,
+			);
+			path = "BLE Stoica";
+			sourceTree = "<group>";
+		};
+		727306CD1B83CAA800FCDE09 /* BLE StoicaTests */ = {
+			isa = PBXGroup;
+			children = (
+				727306CE1B83CAA800FCDE09 /* BLE_StoicaTests.swift */,
+				727306D01B83CAA800FCDE09 /* Info.plist */,
+			);
+			path = "BLE StoicaTests";
+			sourceTree = "<group>";
+		};
+		727306D81B83CAA800FCDE09 /* BLE StoicaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				727306D91B83CAA800FCDE09 /* BLE_StoicaUITests.swift */,
+				727306DB1B83CAA800FCDE09 /* Info.plist */,
+			);
+			path = "BLE StoicaUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		727306B51B83CAA700FCDE09 /* BLE Stoica */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 727306DE1B83CAA800FCDE09 /* Build configuration list for PBXNativeTarget "BLE Stoica" */;
+			buildPhases = (
+				727306B21B83CAA700FCDE09 /* Sources */,
+				727306B31B83CAA700FCDE09 /* Frameworks */,
+				727306B41B83CAA700FCDE09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BLE Stoica";
+			productName = "BLE Stoica";
+			productReference = 727306B61B83CAA700FCDE09 /* BLE Stoica.app */;
+			productType = "com.apple.product-type.application";
+		};
+		727306C91B83CAA800FCDE09 /* BLE StoicaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 727306E11B83CAA800FCDE09 /* Build configuration list for PBXNativeTarget "BLE StoicaTests" */;
+			buildPhases = (
+				727306C61B83CAA800FCDE09 /* Sources */,
+				727306C71B83CAA800FCDE09 /* Frameworks */,
+				727306C81B83CAA800FCDE09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				727306CC1B83CAA800FCDE09 /* PBXTargetDependency */,
+			);
+			name = "BLE StoicaTests";
+			productName = "BLE StoicaTests";
+			productReference = 727306CA1B83CAA800FCDE09 /* BLE StoicaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		727306D41B83CAA800FCDE09 /* BLE StoicaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 727306E41B83CAA800FCDE09 /* Build configuration list for PBXNativeTarget "BLE StoicaUITests" */;
+			buildPhases = (
+				727306D11B83CAA800FCDE09 /* Sources */,
+				727306D21B83CAA800FCDE09 /* Frameworks */,
+				727306D31B83CAA800FCDE09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				727306D71B83CAA800FCDE09 /* PBXTargetDependency */,
+			);
+			name = "BLE StoicaUITests";
+			productName = "BLE StoicaUITests";
+			productReference = 727306D51B83CAA800FCDE09 /* BLE StoicaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		727306AE1B83CAA700FCDE09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Vlad Stoica";
+				TargetAttributes = {
+					727306B51B83CAA700FCDE09 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					727306C91B83CAA800FCDE09 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 727306B51B83CAA700FCDE09;
+					};
+					727306D41B83CAA800FCDE09 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 727306B51B83CAA700FCDE09;
+					};
+				};
+			};
+			buildConfigurationList = 727306B11B83CAA700FCDE09 /* Build configuration list for PBXProject "BLE Stoica" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 727306AD1B83CAA700FCDE09;
+			productRefGroup = 727306B71B83CAA700FCDE09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				727306B51B83CAA700FCDE09 /* BLE Stoica */,
+				727306C91B83CAA800FCDE09 /* BLE StoicaTests */,
+				727306D41B83CAA800FCDE09 /* BLE StoicaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		727306B41B83CAA700FCDE09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727306C41B83CAA700FCDE09 /* LaunchScreen.storyboard in Resources */,
+				727306C11B83CAA700FCDE09 /* Assets.xcassets in Resources */,
+				727306BF1B83CAA700FCDE09 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		727306C81B83CAA800FCDE09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		727306D31B83CAA800FCDE09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		727306B21B83CAA700FCDE09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727306BC1B83CAA700FCDE09 /* ViewController.swift in Sources */,
+				727306BA1B83CAA700FCDE09 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		727306C61B83CAA800FCDE09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727306CF1B83CAA800FCDE09 /* BLE_StoicaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		727306D11B83CAA800FCDE09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				727306DA1B83CAA800FCDE09 /* BLE_StoicaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		727306CC1B83CAA800FCDE09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 727306B51B83CAA700FCDE09 /* BLE Stoica */;
+			targetProxy = 727306CB1B83CAA800FCDE09 /* PBXContainerItemProxy */;
+		};
+		727306D71B83CAA800FCDE09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 727306B51B83CAA700FCDE09 /* BLE Stoica */;
+			targetProxy = 727306D61B83CAA800FCDE09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		727306BD1B83CAA700FCDE09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				727306BE1B83CAA700FCDE09 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		727306C21B83CAA700FCDE09 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				727306C31B83CAA700FCDE09 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		727306DC1B83CAA800FCDE09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		727306DD1B83CAA800FCDE09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		727306DF1B83CAA800FCDE09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "BLE Stoica/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stoica.BLE-Stoica";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		727306E01B83CAA800FCDE09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "BLE Stoica/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stoica.BLE-Stoica";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		727306E21B83CAA800FCDE09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "BLE StoicaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stoica.BLE-StoicaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLE Stoica.app/BLE Stoica";
+			};
+			name = Debug;
+		};
+		727306E31B83CAA800FCDE09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "BLE StoicaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stoica.BLE-StoicaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BLE Stoica.app/BLE Stoica";
+			};
+			name = Release;
+		};
+		727306E51B83CAA800FCDE09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "BLE StoicaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stoica.BLE-StoicaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "BLE Stoica";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		727306E61B83CAA800FCDE09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "BLE StoicaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stoica.BLE-StoicaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "BLE Stoica";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		727306B11B83CAA700FCDE09 /* Build configuration list for PBXProject "BLE Stoica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				727306DC1B83CAA800FCDE09 /* Debug */,
+				727306DD1B83CAA800FCDE09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		727306DE1B83CAA800FCDE09 /* Build configuration list for PBXNativeTarget "BLE Stoica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				727306DF1B83CAA800FCDE09 /* Debug */,
+				727306E01B83CAA800FCDE09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		727306E11B83CAA800FCDE09 /* Build configuration list for PBXNativeTarget "BLE StoicaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				727306E21B83CAA800FCDE09 /* Debug */,
+				727306E31B83CAA800FCDE09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		727306E41B83CAA800FCDE09 /* Build configuration list for PBXNativeTarget "BLE StoicaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				727306E51B83CAA800FCDE09 /* Debug */,
+				727306E61B83CAA800FCDE09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 727306AE1B83CAA700FCDE09 /* Project object */;
+}
