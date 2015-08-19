@@ -68,7 +68,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
 
     func sendLocationNotification (message: String){
         let notification = UILocalNotification()
-        notification.alertBody
+        notification.alertBody = message
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
     
     func locationManager(manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], inRegion region: CLBeaconRegion) {
@@ -81,9 +82,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
                 return;
         }
         lastProximity = nearestBeacon.proximity;
-        let notification = UILocalNotification()
-        notification.alertBody = "Welcome Home! Turning on lights"
-        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        sendLocationNotification("Welcome home! Home sweet home!")
     }
     
     func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
@@ -94,6 +93,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
         manager.stopRangingBeaconsInRegion(region as! CLBeaconRegion)
         manager.stopUpdatingLocation()
+        sendLocationNotification("Good bye! Have a good day")
         
     }
 }
