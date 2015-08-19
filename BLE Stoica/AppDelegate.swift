@@ -7,15 +7,40 @@
 //
 
 import UIKit
+import CoreLocation
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate {
 
     var window: UIWindow?
 
+    let locationManager = CLLocationManager()
+    var lastProximity: CLProximity?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        locationManager.delegate = self;
+        if (CLLocationManager.authorizationStatus() != CLAuthorizationStatus.AuthorizedAlways) {
+            locationManager.requestAlwaysAuthorization()
+        }
+        
+        let uuid = NSUUID(UUIDString: "A0B13730-3A9A-11E3-AA6E-0800200C9A66")
+        let beacon_range = CLBeaconRegion(proximityUUID: uuid!, identifier: "Entrance BLE")
+        
+        if(!CLLocationManager.isMonitoringAvailableForClass(CLBeaconRegion)){
+            NSLog("22")
+        }
+        locationManager.pausesLocationUpdatesAutomatically = false
+        locationManager.startMonitoringForRegion(beacon_range)
+        locationManager.startRangingBeaconsInRegion(beacon_range)
+        locationManager.startUpdatingLocation()
+        if(application.respondsToSelector("registerUserNotificationSettings:")) {
+            application.registerUserNotificationSettings(
+                UIUserNotificationSettings(
+                    forTypes: [UIUserNotificationType.Alert, UIUserNotificationType.Sound],
+                    categories: nil
+                )
+            )
+        }
         return true
     }
 
@@ -41,6 +66,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func sendLocationNotification (message: String){
+        let notification = UILocalNotification()
+        notification.alertBody
+    }
+    
+    func locationManager(manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], inRegion region: CLBeaconRegion) {
+        if(beacons.count == 0){
+            return;
+        }
+        let nearestBeacon:CLBeacon = beacons[0]
+        if(nearestBeacon.proximity == lastProximity ||
+            nearestBeacon.proximity == CLProximity.Unknown){
+                return;
+        }
+        lastProximity = nearestBeacon.proximity;
+        let notification = UILocalNotification()
+        notification.alertBody = "Welcome Home! Turning on lights"
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+    }
+    
+    func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        manager.startRangingBeaconsInRegion(region as! CLBeaconRegion)
+        manager.startUpdatingLocation()
+    }
 
+    func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
+        manager.stopRangingBeaconsInRegion(region as! CLBeaconRegion)
+        manager.stopUpdatingLocation()
+        
+    }
 }
 

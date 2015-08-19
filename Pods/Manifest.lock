@@ -1,0 +1,10 @@
+PODS:
+  - BlueBarSDK (0.5)
+
+DEPENDENCIES:
+  - BlueBarSDK
+
+SPEC CHECKSUMS:
+  BlueBarSDK: d1dcdce07e2c01fca0bee5e7ff0fbd7ec4707848
+
+COCOAPODS: 0.38.2

@@ -1,0 +1,1 @@
+../../../BlueBarSDK/SDK/BlueBarSDK/includes/Integrations/TreasureHunt/TreasureHuntLocation.h
