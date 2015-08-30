@@ -7,88 +7,305 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0DD045AFFB18E3B6765EAA833752B248 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C28B8E058C89620CE9659D6B96DEC4 /* Foundation.framework */; };
-		63ED66963556AA601F19189B2B58F3BD /* Pods-BLE Stoica-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BBB42B3B3672CD0264FD7CA75EFDAD /* Pods-BLE Stoica-dummy.m */; };
+		039D878A00D9F83FF0C8717D01DD4FAF /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340FEAD561B70A4456EA8F3020701821 /* Upload.swift */; };
+		23F5940A08DB5F0B129F9DFF7CCC3452 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 85E62DA073C367ACFC8C77B0B6180FD1 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		245C698B199D665DBCE45BB2EC21C3C4 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDF6934C47B3925A80604B1F7EFA028 /* ServerTrustPolicy.swift */; };
+		27AAB05FA022EC35CD8E10A934E7ABE6 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47330339142A84286D0709E6E2C3D0DC /* Stream.swift */; };
+		2B567563DD2EB7E21C2160BC25691856 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2A88517F975B27A859388D2FA9E96D /* ParameterEncoding.swift */; };
+		340619C852D7689C15677AD364D42666 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A4E2D953D90F646F68191C8EB3ECBF /* Request.swift */; };
+		3545684FB3078B438E6DB6A603FE5BB2 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670B0479AAC11983447567EB43A3EC97 /* Error.swift */; };
+		3769B9433B301E32A9DC200E73038AF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4EC4B75BAE91861986227C1BE7B931E /* Foundation.framework */; };
+		39A8A7DB3537BDC61EF618B1737C1EB5 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F861572AEF58AF8E8738463397C601 /* SwiftyJSON.swift */; };
+		3D0ED18240FC9EB34A8B1632E341B6AD /* Pods-BLE StoicaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4E323321650F8FA87778AE88F440BA1 /* Pods-BLE StoicaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45C05E20EE8A9AE570D6B213D9F979BA /* Pods-BLE Stoica-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F07ACF0165F601998375905F0078EE8F /* Pods-BLE Stoica-dummy.m */; };
+		49EA1BDE25C7D33D11688B07228E3E6A /* Pods-BLE Stoica-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53B192E97362D60243EBC5167D6C174B /* Pods-BLE Stoica-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5814A80B18B3B869B13AF95B55F08BB4 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA6D864E97A6F98F95EB9EF07E2EE8 /* Validation.swift */; };
+		5B886F18AF6C2EA293459374F6A50F98 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0E247CBB7E083680345915E4419E93 /* Result.swift */; };
+		5FB4EA85CD7BD0C88EB07C558A073B28 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D763755FECEA74312F388CF244DF41D3 /* Manager.swift */; };
+		62E94A90A393155D012B719C50103C4C /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1C2A8BE35064C53DFD531B45F6B549 /* MultipartFormData.swift */; };
+		7918EFEC82E18C98AA01044E4A98FEFC /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AEA0C4ED105755E3E2C9C97C897F906 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E4A95D65FC150BA4908CC9F7E001EBF /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B7170807A389842191FCC4120C44953 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80B815B1D7F3C0E255AE6BF79FFE54C5 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2AD48820C0D7E7FC1B9374CF43B6A0F /* Alamofire-dummy.m */; };
+		8234254488603ABBF3F7D3795AA7F85E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4EC4B75BAE91861986227C1BE7B931E /* Foundation.framework */; };
+		90EF20BB8DC0A183A97CEE5D4BE375EE /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0D3575B7F9DE11C652ED4F55D4D976B /* SwiftyJSON-dummy.m */; };
+		99DAF9BD8C612257584F5920937B5D56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4EC4B75BAE91861986227C1BE7B931E /* Foundation.framework */; };
+		AB13761EE351C1DF6DE50A49781092BD /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFF4592B167F57D1256E69972F4E540 /* Pods-dummy.m */; };
+		B035D1C52F8E20B0258490097401AA4B /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCED748B91BCD5A0A97281969356656 /* ResponseSerialization.swift */; };
+		C03E8B46EDF986A29C094D01658F5C7B /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510276608495B5033BFCBD0E1FB68D4F /* Download.swift */; };
+		C6016DBA4E8F5141FCD35151D34F7403 /* Pods-BLE StoicaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D667C211FC249B5339C9AEA99476032B /* Pods-BLE StoicaUITests-dummy.m */; };
+		CA84A9E3341B5EC4E5988CE4A5431CC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4EC4B75BAE91861986227C1BE7B931E /* Foundation.framework */; };
+		D8FC7C04DC43091E653F8299B825C2B6 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232AF5F4AD14CEDC9C839C0F901E70F8 /* Alamofire.swift */; };
+		E35CD9B4D7D027EE38EB544A55217007 /* Pods-BLE StoicaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B958FA9625295DD6852BCAEFBBE8BA2 /* Pods-BLE StoicaTests-dummy.m */; };
+		EA2C7F5CBAEB580584B08A148CF70513 /* Pods-BLE StoicaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 616F553117D6114E5DD73E9B98D84827 /* Pods-BLE StoicaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC5A5DEBFCA5E8EB8FDF1C984F9EFA0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4EC4B75BAE91861986227C1BE7B931E /* Foundation.framework */; };
+		F62CBFC28C96E2F3CCA00054302CC9DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4EC4B75BAE91861986227C1BE7B931E /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		043E9EB7C68A79ECE766F552D7507FC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9A04D3C9B208813656510FDA8ADAE02;
+			remoteInfo = SwiftyJSON;
+		};
+		4BFD41823ED408CA8A77ABFDE4059CE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9A04D3C9B208813656510FDA8ADAE02;
+			remoteInfo = SwiftyJSON;
+		};
+		78058B0D674C932B466898E4504C0D60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F97CFF46E3B10C2A6A4D51786E7C07E7;
+			remoteInfo = Alamofire;
+		};
+		A79B52701CDD1ACC4FF376B43D7ABA35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F97CFF46E3B10C2A6A4D51786E7C07E7;
+			remoteInfo = Alamofire;
+		};
+		A92F817E99DD6AA643AFAF9CF4CE1A07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F97CFF46E3B10C2A6A4D51786E7C07E7;
+			remoteInfo = Alamofire;
+		};
+		B22D792707C8EEE0089528A8725F788B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9A04D3C9B208813656510FDA8ADAE02;
+			remoteInfo = SwiftyJSON;
+		};
+		EC9445825149F9728D1B172045ED2C7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9A04D3C9B208813656510FDA8ADAE02;
+			remoteInfo = SwiftyJSON;
+		};
+		F54E3335BD258EC9407A3F3B147F5A71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F97CFF46E3B10C2A6A4D51786E7C07E7;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		06C28B8E058C89620CE9659D6B96DEC4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		0D97F992C016007019CCF5017643B0EE /* ApiCredentials.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ApiCredentials.h; path = SDK/BlueBarSDK/includes/Model/ApiCredentials.h; sourceTree = "<group>"; };
-		133BA4DA626CEB5BE4D933B89509985B /* Integrations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Integrations.h; path = SDK/BlueBarSDK/includes/Integrations/Integrations.h; sourceTree = "<group>"; };
-		1A4438C3BE1B3459393D79928EA0761A /* AppUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppUser.h; path = SDK/BlueBarSDK/includes/Model/AppUser.h; sourceTree = "<group>"; };
-		1D70954D9A54F5E9975324D0430CEC41 /* RichContentAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RichContentAction.h; path = SDK/BlueBarSDK/includes/Model/RichContentAction.h; sourceTree = "<group>"; };
-		20AF0AAC7B8D9D3D7179EFA2B3F9E137 /* NSObject+BSN_GFJson.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+BSN_GFJson.h"; path = "SDK/BlueBarSDK/includes/Dependencies/GoldenFleece/NSObject+BSN_GFJson.h"; sourceTree = "<group>"; };
-		27241CE065FB1AA1D97667A80A50A1D1 /* Pods-BLE Stoica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLE Stoica.debug.xcconfig"; sourceTree = "<group>"; };
-		27663D1CB18FA8504C05F2D6D619B15E /* TreasureHuntAchievement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TreasureHuntAchievement.h; path = SDK/BlueBarSDK/includes/Integrations/TreasureHunt/TreasureHuntAchievement.h; sourceTree = "<group>"; };
-		28DEF29256AEC950EC3D5896292C6122 /* NSArray+Transform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Transform.h"; path = "SDK/BlueBarSDK/includes/Model/NSArray+Transform.h"; sourceTree = "<group>"; };
-		2CACD3CC545C8C56701C6660ABB8DB0D /* Pods-BLE Stoica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLE Stoica.release.xcconfig"; sourceTree = "<group>"; };
-		2E53F92E5E63998E6991CFD241DDDEE6 /* PresenceAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PresenceAction.h; path = SDK/BlueBarSDK/includes/Model/PresenceAction.h; sourceTree = "<group>"; };
-		30B9ABA382242FF3E6EE1D723BBE5D69 /* libPods-BLE Stoica.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BLE Stoica.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		391083A24B5023EF12F1B1F224FBC5EC /* ApiUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ApiUtility.h; path = SDK/BlueBarSDK/includes/Model/ApiUtility.h; sourceTree = "<group>"; };
-		3C8F8446C3A75EB1E09D72869F0C1EBE /* Sighting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Sighting.h; path = SDK/BlueBarSDK/includes/Model/Sighting.h; sourceTree = "<group>"; };
-		40BBB42B3B3672CD0264FD7CA75EFDAD /* Pods-BLE Stoica-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BLE Stoica-dummy.m"; sourceTree = "<group>"; };
-		42C00336BA423CAFC83C89722987EFF8 /* DetectedBeacon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DetectedBeacon.h; path = SDK/BlueBarSDK/includes/Model/DetectedBeacon.h; sourceTree = "<group>"; };
-		4331A0512349BEDB2892A9ADB76892E5 /* UserProfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UserProfile.h; path = SDK/BlueBarSDK/includes/Model/UserProfile.h; sourceTree = "<group>"; };
-		48D22330328D11BDCF0C7D66941CA8BB /* KeyValueAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KeyValueAction.h; path = SDK/BlueBarSDK/includes/Model/KeyValueAction.h; sourceTree = "<group>"; };
-		51F1ADAACDE455EAB9DDC1C44F341A2F /* BeaconCalibration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BeaconCalibration.h; path = SDK/BlueBarSDK/includes/LE/BeaconCalibration.h; sourceTree = "<group>"; };
-		6AFCB252BDAD858606E14093A085DC70 /* ZoneEventDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZoneEventDetails.h; path = SDK/BlueBarSDK/includes/Model/ZoneEventDetails.h; sourceTree = "<group>"; };
-		70681D41D490646AA1032BDA0224E873 /* MesageAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MesageAction.h; path = SDK/BlueBarSDK/includes/Model/MesageAction.h; sourceTree = "<group>"; };
-		77383C528866E1EB51D1A801AF0CC939 /* BeaconDiscovery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BeaconDiscovery.h; path = SDK/BlueBarSDK/includes/LE/BeaconDiscovery.h; sourceTree = "<group>"; };
-		804AB9FE3C82C6C83700798618746E5B /* ActionResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionResponse.h; path = SDK/BlueBarSDK/includes/Model/ActionResponse.h; sourceTree = "<group>"; };
-		890D28623486B40CA2CBD685BDB9CE26 /* TreasureHuntLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TreasureHuntLocation.h; path = SDK/BlueBarSDK/includes/Integrations/TreasureHunt/TreasureHuntLocation.h; sourceTree = "<group>"; };
-		894F09E0595BCABAFF9D0E39C0B7175E /* Application.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Application.h; path = SDK/BlueBarSDK/includes/Model/Application.h; sourceTree = "<group>"; };
-		9060BBE91FAE686E66232552C56FE63D /* libBlueBarSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libBlueBarSDK.a; path = SDK/BlueBarSDK/lib/libBlueBarSDK.a; sourceTree = "<group>"; };
-		A351C199E67ADB5250E93A0F766461C9 /* BlueBarSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BlueBarSDK.h; path = SDK/BlueBarSDK/includes/BlueBarSDK.h; sourceTree = "<group>"; };
-		AAF814D5639E2D0F9B20824374D9B2F3 /* Pods-BLE Stoica-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLE Stoica-resources.sh"; sourceTree = "<group>"; };
-		B02E6BAD59D0AE5571224AEEF36D55BC /* TreasureHuntComplete.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TreasureHuntComplete.h; path = SDK/BlueBarSDK/includes/Integrations/TreasureHunt/TreasureHuntComplete.h; sourceTree = "<group>"; };
-		B075325DEE91CD38EAF6B7BC0CCCF3F2 /* Pods-BLE Stoica-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BLE Stoica-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B21EDBCF6B2F24946A97D5F94C8DA00A /* ApiOperations.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ApiOperations.h; path = SDK/BlueBarSDK/includes/Model/ApiOperations.h; sourceTree = "<group>"; };
-		B525D6E88928251B1D34E29129DE95DC /* BSN_ISO8601DateFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSN_ISO8601DateFormatter.h; path = SDK/BlueBarSDK/includes/Dependencies/ISO8601DateFormatter/BSN_ISO8601DateFormatter.h; sourceTree = "<group>"; };
-		B5F9CED4694CE664B9B815DDC6553348 /* TreasureHuntStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TreasureHuntStatus.h; path = SDK/BlueBarSDK/includes/Integrations/TreasureHunt/TreasureHuntStatus.h; sourceTree = "<group>"; };
+		01C7A168AF46EEB176D6A9E7143D518F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0775090E696EF9A64C87E02ACE43B325 /* Pods-BLE StoicaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLE StoicaTests.release.xcconfig"; sourceTree = "<group>"; };
+		09A2F74D6608C860A648C335E2E444C4 /* Alamofire-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Alamofire-Private.xcconfig"; sourceTree = "<group>"; };
+		1352EC58DB2570DB8033F444DAAE01A9 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		18753FB462BC04A8754365966957B225 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B7170807A389842191FCC4120C44953 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		232AF5F4AD14CEDC9C839C0F901E70F8 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		242D987867704F525156E7C95D0B9A33 /* Pods-BLE StoicaUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLE StoicaUITests-resources.sh"; sourceTree = "<group>"; };
+		249CE06465485A8FDABFCC865175725D /* Pods-BLE StoicaTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLE StoicaTests-frameworks.sh"; sourceTree = "<group>"; };
+		257FAB6450D7BBADB2D5E12D1545E445 /* Pods-BLE StoicaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLE StoicaUITests-frameworks.sh"; sourceTree = "<group>"; };
+		2AEA0C4ED105755E3E2C9C97C897F906 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		31F861572AEF58AF8E8738463397C601 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		340FEAD561B70A4456EA8F3020701821 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		3B52D78868F05B047BAD62167F3D7A91 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		3C1C2A8BE35064C53DFD531B45F6B549 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		3CCED748B91BCD5A0A97281969356656 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		3D2A88517F975B27A859388D2FA9E96D /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		432C8A8AE3FE3064334B2E6D8085A931 /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		43EA6D864E97A6F98F95EB9EF07E2EE8 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		449653B7EB981DF767B1B02FE99E4167 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		47330339142A84286D0709E6E2C3D0DC /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
+		4EA617B9BBED749A08818CA3B14B4DF3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		510276608495B5033BFCBD0E1FB68D4F /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		516107DD587C4C9C5E0CC12E7B09D0CF /* Pods-BLE StoicaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BLE StoicaTests.modulemap"; sourceTree = "<group>"; };
+		51DE81A3FE502F32BD9B61F7A4FB7B47 /* Pods-BLE Stoica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLE Stoica.debug.xcconfig"; sourceTree = "<group>"; };
+		53B192E97362D60243EBC5167D6C174B /* Pods-BLE Stoica-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BLE Stoica-umbrella.h"; sourceTree = "<group>"; };
+		559FC5F2E9BFD5E9354F2736A91D5641 /* Pods-BLE StoicaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLE StoicaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		55FB1685370EAFCB3634D60D1B55F7D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		587792E9A9A89A9DC0795AB537538172 /* Pods_BLE_Stoica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLE_Stoica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EABB2B760498D417D5395E557EFA4CD /* Pods-BLE StoicaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLE StoicaTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		616F553117D6114E5DD73E9B98D84827 /* Pods-BLE StoicaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BLE StoicaTests-umbrella.h"; sourceTree = "<group>"; };
+		618DE80F3ABB9C152CA665946EA5D47D /* Pods-BLE StoicaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLE StoicaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		633CEFEAF7B468C11E57E24FFBCD69EC /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		670B0479AAC11983447567EB43A3EC97 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		6B958FA9625295DD6852BCAEFBBE8BA2 /* Pods-BLE StoicaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BLE StoicaTests-dummy.m"; sourceTree = "<group>"; };
+		6FAB31A789B82EF624DACF24712ECF32 /* Pods-BLE Stoica-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BLE Stoica-acknowledgements.markdown"; sourceTree = "<group>"; };
+		745113072A016AB41BE77FED58CC0C5B /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		792647DB910D99F42C209A115E97DF3B /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		7DFF4592B167F57D1256E69972F4E540 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		85E62DA073C367ACFC8C77B0B6180FD1 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		8984124D771502EC9ACE580BA6981ED3 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		8D31C916B0A9369BEE50346EC671C516 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		8F59777D195DB9241520AD2E15E15D76 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		90AFA7E506419302BE0B4149C0E4C259 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9869999F52C45475C6D8A1E99CA66321 /* Pods-BLE Stoica.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BLE Stoica.modulemap"; sourceTree = "<group>"; };
+		9F5E91853AE855EF700C5990EA53FEAD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FC7975897F95B5CA2B31555BB1CC350 /* Pods-BLE StoicaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLE StoicaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A0D3575B7F9DE11C652ED4F55D4D976B /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		A27FEB862EEA34D4A4EC4BDC6E1B9A91 /* Pods-BLE StoicaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLE StoicaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A6A4E2D953D90F646F68191C8EB3ECBF /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		AD5DE7CEDE90A114538115E1B3EB4725 /* Pods-BLE Stoica-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLE Stoica-frameworks.sh"; sourceTree = "<group>"; };
+		AE4989CC04587A21D797EE9A4855F56A /* Pods_BLE_StoicaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLE_StoicaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE6431D8D7EFA238E472F7F31141257C /* SwiftyJSON-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "SwiftyJSON-Private.xcconfig"; sourceTree = "<group>"; };
+		B2AD48820C0D7E7FC1B9374CF43B6A0F /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		B4E323321650F8FA87778AE88F440BA1 /* Pods-BLE StoicaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BLE StoicaUITests-umbrella.h"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C65CDC3BCA4A9677FBDFC4EA2E829545 /* BSN_GFDateFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSN_GFDateFormatter.h; path = SDK/BlueBarSDK/includes/Dependencies/GoldenFleece/BSN_GFDateFormatter.h; sourceTree = "<group>"; };
-		CAB1B592A2889170C2D6757901CAEE92 /* BeaconConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BeaconConfiguration.h; path = SDK/BlueBarSDK/includes/Model/BeaconConfiguration.h; sourceTree = "<group>"; };
-		D9599A8075B449AA1139633B6071E84C /* RangingManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RangingManager.h; path = SDK/BlueBarSDK/includes/Model/RangingManager.h; sourceTree = "<group>"; };
-		E2ED9299FD6C00137E7FCB2175031C48 /* ActionBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ActionBase.h; path = SDK/BlueBarSDK/includes/Model/ActionBase.h; sourceTree = "<group>"; };
-		ED7E32A1BC2E8CB1D9B005DA864BF989 /* BeaconConfigurationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BeaconConfigurationService.h; path = SDK/BlueBarSDK/includes/LE/BeaconConfigurationService.h; sourceTree = "<group>"; };
-		EE0E8D197920DD948ED2B270D3FA9AC8 /* Pods-BLE Stoica-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLE Stoica-acknowledgements.plist"; sourceTree = "<group>"; };
-		FFBD0534B4AF5045F6394619EADA70DD /* NSDate+BSN_Helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+BSN_Helper.h"; path = "SDK/BlueBarSDK/includes/Dependencies/NSDate+Helper/NSDate+BSN_Helper.h"; sourceTree = "<group>"; };
+		BC6EEB2BEC07FE5FCCBA33F45D084528 /* Pods-BLE Stoica-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLE Stoica-acknowledgements.plist"; sourceTree = "<group>"; };
+		BF0E247CBB7E083680345915E4419E93 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		C1632633049D5261CFDCE300BA7F3AB3 /* Pods-BLE Stoica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLE Stoica.release.xcconfig"; sourceTree = "<group>"; };
+		C4BC510D75E12053BA1F73D4A9466E47 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C6E3375311FD01CE98249B0AD6B9232C /* Pods-BLE Stoica-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLE Stoica-resources.sh"; sourceTree = "<group>"; };
+		C8568D710872A53D76E2D73A27AF1497 /* Pods-BLE StoicaTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLE StoicaTests-resources.sh"; sourceTree = "<group>"; };
+		CACC9564A6D882B60A54DC17E7077E04 /* Pods-BLE StoicaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BLE StoicaUITests.modulemap"; sourceTree = "<group>"; };
+		CF055714A35A22242A6C4574109B6371 /* Pods-BLE StoicaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BLE StoicaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D667C211FC249B5339C9AEA99476032B /* Pods-BLE StoicaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BLE StoicaUITests-dummy.m"; sourceTree = "<group>"; };
+		D763755FECEA74312F388CF244DF41D3 /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		D967B4A69969621272F23A078D34C25A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA5355FACC6452852E4EA9A6310037A8 /* Pods-BLE StoicaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BLE StoicaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DDDF6934C47B3925A80604B1F7EFA028 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		E4EC4B75BAE91861986227C1BE7B931E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EB4CB50B42FA0112BD3CB968CB68AC93 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB7FF003E0650BB7FA55AA8F21B0E1C7 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		F07ACF0165F601998375905F0078EE8F /* Pods-BLE Stoica-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BLE Stoica-dummy.m"; sourceTree = "<group>"; };
+		FCF292AC29E2F922B587FEE290DA3B3F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		FD4524DA88057D36D2C7851F59B091FB /* Pods_BLE_StoicaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLE_StoicaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFA9498F73A3D56F62833F4B42ABD829 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A81DAE583BDCDB7B6AA5DE9DA6F1A322 /* Frameworks */ = {
+		4E22B3EC7FF6DF09D790AFA6C9074904 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DD045AFFB18E3B6765EAA833752B248 /* Foundation.framework in Frameworks */,
+				8234254488603ABBF3F7D3795AA7F85E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9068B6FF953F57C959D4B7FA1038FD28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA84A9E3341B5EC4E5988CE4A5431CC9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBEEDA6A29AD33FB9CFD183DA7A8F5B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3769B9433B301E32A9DC200E73038AF3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8C9F3902825DB454B5CC1CF48F48801 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99DAF9BD8C612257584F5920937B5D56 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA97430D449D9D0A4AE6CC26BA4B0CE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC5A5DEBFCA5E8EB8FDF1C984F9EFA0F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE6878794FB18178E268DE8E2312941E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F62CBFC28C96E2F3CCA00054302CC9DD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		45DFA55F8FA11B7F293C05EAB2B5E4BE /* Pods */ = {
+		0F3F4ED5BED7FB9105127AF205EE5580 /* Pods-BLE Stoica */ = {
 			isa = PBXGroup;
 			children = (
-				DC4A94F41F3EEE0DEFEE4D0858B95F1F /* BlueBarSDK */,
+				4EA617B9BBED749A08818CA3B14B4DF3 /* Info.plist */,
+				9869999F52C45475C6D8A1E99CA66321 /* Pods-BLE Stoica.modulemap */,
+				6FAB31A789B82EF624DACF24712ECF32 /* Pods-BLE Stoica-acknowledgements.markdown */,
+				BC6EEB2BEC07FE5FCCBA33F45D084528 /* Pods-BLE Stoica-acknowledgements.plist */,
+				F07ACF0165F601998375905F0078EE8F /* Pods-BLE Stoica-dummy.m */,
+				AD5DE7CEDE90A114538115E1B3EB4725 /* Pods-BLE Stoica-frameworks.sh */,
+				C6E3375311FD01CE98249B0AD6B9232C /* Pods-BLE Stoica-resources.sh */,
+				53B192E97362D60243EBC5167D6C174B /* Pods-BLE Stoica-umbrella.h */,
+				51DE81A3FE502F32BD9B61F7A4FB7B47 /* Pods-BLE Stoica.debug.xcconfig */,
+				C1632633049D5261CFDCE300BA7F3AB3 /* Pods-BLE Stoica.release.xcconfig */,
 			);
-			name = Pods;
+			name = "Pods-BLE Stoica";
+			path = "Target Support Files/Pods-BLE Stoica";
+			sourceTree = "<group>";
+		};
+		11C2905B4502FF1FBF9076FCA3E1376B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				792647DB910D99F42C209A115E97DF3B /* Alamofire.modulemap */,
+				8D31C916B0A9369BEE50346EC671C516 /* Alamofire.xcconfig */,
+				09A2F74D6608C860A648C335E2E444C4 /* Alamofire-Private.xcconfig */,
+				B2AD48820C0D7E7FC1B9374CF43B6A0F /* Alamofire-dummy.m */,
+				1352EC58DB2570DB8033F444DAAE01A9 /* Alamofire-prefix.pch */,
+				2AEA0C4ED105755E3E2C9C97C897F906 /* Alamofire-umbrella.h */,
+				D967B4A69969621272F23A078D34C25A /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
 			sourceTree = "<group>";
 		};
 		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				06C28B8E058C89620CE9659D6B96DEC4 /* Foundation.framework */,
+				E4EC4B75BAE91861986227C1BE7B931E /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6D5337E2889AA6149075043B161DB426 /* Frameworks */ = {
+		7094C57CE4A34BED10B97C525304BC0C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9060BBE91FAE686E66232552C56FE63D /* libBlueBarSDK.a */,
+				55FB1685370EAFCB3634D60D1B55F7D1 /* Info.plist */,
+				432C8A8AE3FE3064334B2E6D8085A931 /* Pods.modulemap */,
+				C4BC510D75E12053BA1F73D4A9466E47 /* Pods-acknowledgements.markdown */,
+				8F59777D195DB9241520AD2E15E15D76 /* Pods-acknowledgements.plist */,
+				7DFF4592B167F57D1256E69972F4E540 /* Pods-dummy.m */,
+				633CEFEAF7B468C11E57E24FFBCD69EC /* Pods-frameworks.sh */,
+				449653B7EB981DF767B1B02FE99E4167 /* Pods-resources.sh */,
+				1B7170807A389842191FCC4120C44953 /* Pods-umbrella.h */,
+				FCF292AC29E2F922B587FEE290DA3B3F /* Pods.debug.xcconfig */,
+				3B52D78868F05B047BAD62167F3D7A91 /* Pods.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		729F9AEF0CA49403B1022EE1063942DD /* Pods-BLE StoicaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9F5E91853AE855EF700C5990EA53FEAD /* Info.plist */,
+				CACC9564A6D882B60A54DC17E7077E04 /* Pods-BLE StoicaUITests.modulemap */,
+				DA5355FACC6452852E4EA9A6310037A8 /* Pods-BLE StoicaUITests-acknowledgements.markdown */,
+				9FC7975897F95B5CA2B31555BB1CC350 /* Pods-BLE StoicaUITests-acknowledgements.plist */,
+				D667C211FC249B5339C9AEA99476032B /* Pods-BLE StoicaUITests-dummy.m */,
+				257FAB6450D7BBADB2D5E12D1545E445 /* Pods-BLE StoicaUITests-frameworks.sh */,
+				242D987867704F525156E7C95D0B9A33 /* Pods-BLE StoicaUITests-resources.sh */,
+				B4E323321650F8FA87778AE88F440BA1 /* Pods-BLE StoicaUITests-umbrella.h */,
+				618DE80F3ABB9C152CA665946EA5D47D /* Pods-BLE StoicaUITests.debug.xcconfig */,
+				A27FEB862EEA34D4A4EC4BDC6E1B9A91 /* Pods-BLE StoicaUITests.release.xcconfig */,
+			);
+			name = "Pods-BLE StoicaUITests";
+			path = "Target Support Files/Pods-BLE StoicaUITests";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -96,24 +313,46 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				45DFA55F8FA11B7F293C05EAB2B5E4BE /* Pods */,
+				D4DC2528802D5143120EA397BE51FC7F /* Pods */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
-				FC75EA2D6233845B84206EBA3789866A /* Targets Support Files */,
+				C9E590D8E87F08CDC6329DB6E057E880 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		812815F305082C08D030AD195A98A0DA /* Pods-BLE Stoica */ = {
+		83436DDF3622F8399AE7CB90FA6D2851 /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				B075325DEE91CD38EAF6B7BC0CCCF3F2 /* Pods-BLE Stoica-acknowledgements.markdown */,
-				EE0E8D197920DD948ED2B270D3FA9AC8 /* Pods-BLE Stoica-acknowledgements.plist */,
-				40BBB42B3B3672CD0264FD7CA75EFDAD /* Pods-BLE Stoica-dummy.m */,
-				AAF814D5639E2D0F9B20824374D9B2F3 /* Pods-BLE Stoica-resources.sh */,
-				27241CE065FB1AA1D97667A80A50A1D1 /* Pods-BLE Stoica.debug.xcconfig */,
-				2CACD3CC545C8C56701C6660ABB8DB0D /* Pods-BLE Stoica.release.xcconfig */,
+				232AF5F4AD14CEDC9C839C0F901E70F8 /* Alamofire.swift */,
+				510276608495B5033BFCBD0E1FB68D4F /* Download.swift */,
+				670B0479AAC11983447567EB43A3EC97 /* Error.swift */,
+				D763755FECEA74312F388CF244DF41D3 /* Manager.swift */,
+				3C1C2A8BE35064C53DFD531B45F6B549 /* MultipartFormData.swift */,
+				3D2A88517F975B27A859388D2FA9E96D /* ParameterEncoding.swift */,
+				A6A4E2D953D90F646F68191C8EB3ECBF /* Request.swift */,
+				3CCED748B91BCD5A0A97281969356656 /* ResponseSerialization.swift */,
+				BF0E247CBB7E083680345915E4419E93 /* Result.swift */,
+				DDDF6934C47B3925A80604B1F7EFA028 /* ServerTrustPolicy.swift */,
+				47330339142A84286D0709E6E2C3D0DC /* Stream.swift */,
+				340FEAD561B70A4456EA8F3020701821 /* Upload.swift */,
+				43EA6D864E97A6F98F95EB9EF07E2EE8 /* Validation.swift */,
+				11C2905B4502FF1FBF9076FCA3E1376B /* Support Files */,
 			);
-			name = "Pods-BLE Stoica";
-			path = "Target Support Files/Pods-BLE Stoica";
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		B4D5A92042971434DFF0F905C2074352 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				18753FB462BC04A8754365966957B225 /* Info.plist */,
+				745113072A016AB41BE77FED58CC0C5B /* SwiftyJSON.modulemap */,
+				EB7FF003E0650BB7FA55AA8F21B0E1C7 /* SwiftyJSON.xcconfig */,
+				AE6431D8D7EFA238E472F7F31141257C /* SwiftyJSON-Private.xcconfig */,
+				A0D3575B7F9DE11C652ED4F55D4D976B /* SwiftyJSON-dummy.m */,
+				8984124D771502EC9ACE580BA6981ED3 /* SwiftyJSON-prefix.pch */,
+				85E62DA073C367ACFC8C77B0B6180FD1 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -124,79 +363,229 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+		C3B93AED10DD07ADF5546855D3AC5E32 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				30B9ABA382242FF3E6EE1D723BBE5D69 /* libPods-BLE Stoica.a */,
+				31F861572AEF58AF8E8738463397C601 /* SwiftyJSON.swift */,
+				B4D5A92042971434DFF0F905C2074352 /* Support Files */,
 			);
-			name = Products;
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
-		DC4A94F41F3EEE0DEFEE4D0858B95F1F /* BlueBarSDK */ = {
+		C9E590D8E87F08CDC6329DB6E057E880 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E2ED9299FD6C00137E7FCB2175031C48 /* ActionBase.h */,
-				804AB9FE3C82C6C83700798618746E5B /* ActionResponse.h */,
-				0D97F992C016007019CCF5017643B0EE /* ApiCredentials.h */,
-				B21EDBCF6B2F24946A97D5F94C8DA00A /* ApiOperations.h */,
-				391083A24B5023EF12F1B1F224FBC5EC /* ApiUtility.h */,
-				1A4438C3BE1B3459393D79928EA0761A /* AppUser.h */,
-				894F09E0595BCABAFF9D0E39C0B7175E /* Application.h */,
-				C65CDC3BCA4A9677FBDFC4EA2E829545 /* BSN_GFDateFormatter.h */,
-				B525D6E88928251B1D34E29129DE95DC /* BSN_ISO8601DateFormatter.h */,
-				51F1ADAACDE455EAB9DDC1C44F341A2F /* BeaconCalibration.h */,
-				CAB1B592A2889170C2D6757901CAEE92 /* BeaconConfiguration.h */,
-				ED7E32A1BC2E8CB1D9B005DA864BF989 /* BeaconConfigurationService.h */,
-				77383C528866E1EB51D1A801AF0CC939 /* BeaconDiscovery.h */,
-				A351C199E67ADB5250E93A0F766461C9 /* BlueBarSDK.h */,
-				42C00336BA423CAFC83C89722987EFF8 /* DetectedBeacon.h */,
-				133BA4DA626CEB5BE4D933B89509985B /* Integrations.h */,
-				48D22330328D11BDCF0C7D66941CA8BB /* KeyValueAction.h */,
-				70681D41D490646AA1032BDA0224E873 /* MesageAction.h */,
-				28DEF29256AEC950EC3D5896292C6122 /* NSArray+Transform.h */,
-				FFBD0534B4AF5045F6394619EADA70DD /* NSDate+BSN_Helper.h */,
-				20AF0AAC7B8D9D3D7179EFA2B3F9E137 /* NSObject+BSN_GFJson.h */,
-				2E53F92E5E63998E6991CFD241DDDEE6 /* PresenceAction.h */,
-				D9599A8075B449AA1139633B6071E84C /* RangingManager.h */,
-				1D70954D9A54F5E9975324D0430CEC41 /* RichContentAction.h */,
-				3C8F8446C3A75EB1E09D72869F0C1EBE /* Sighting.h */,
-				27663D1CB18FA8504C05F2D6D619B15E /* TreasureHuntAchievement.h */,
-				B02E6BAD59D0AE5571224AEEF36D55BC /* TreasureHuntComplete.h */,
-				890D28623486B40CA2CBD685BDB9CE26 /* TreasureHuntLocation.h */,
-				B5F9CED4694CE664B9B815DDC6553348 /* TreasureHuntStatus.h */,
-				4331A0512349BEDB2892A9ADB76892E5 /* UserProfile.h */,
-				6AFCB252BDAD858606E14093A085DC70 /* ZoneEventDetails.h */,
-				6D5337E2889AA6149075043B161DB426 /* Frameworks */,
-			);
-			path = BlueBarSDK;
-			sourceTree = "<group>";
-		};
-		FC75EA2D6233845B84206EBA3789866A /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				812815F305082C08D030AD195A98A0DA /* Pods-BLE Stoica */,
+				7094C57CE4A34BED10B97C525304BC0C /* Pods */,
+				0F3F4ED5BED7FB9105127AF205EE5580 /* Pods-BLE Stoica */,
+				D758280E6807A4E3B37A38197769947E /* Pods-BLE StoicaTests */,
+				729F9AEF0CA49403B1022EE1063942DD /* Pods-BLE StoicaUITests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90AFA7E506419302BE0B4149C0E4C259 /* Alamofire.framework */,
+				FFA9498F73A3D56F62833F4B42ABD829 /* Pods.framework */,
+				587792E9A9A89A9DC0795AB537538172 /* Pods_BLE_Stoica.framework */,
+				AE4989CC04587A21D797EE9A4855F56A /* Pods_BLE_StoicaTests.framework */,
+				FD4524DA88057D36D2C7851F59B091FB /* Pods_BLE_StoicaUITests.framework */,
+				EB4CB50B42FA0112BD3CB968CB68AC93 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4DC2528802D5143120EA397BE51FC7F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83436DDF3622F8399AE7CB90FA6D2851 /* Alamofire */,
+				C3B93AED10DD07ADF5546855D3AC5E32 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D758280E6807A4E3B37A38197769947E /* Pods-BLE StoicaTests */ = {
+			isa = PBXGroup;
+			children = (
+				01C7A168AF46EEB176D6A9E7143D518F /* Info.plist */,
+				516107DD587C4C9C5E0CC12E7B09D0CF /* Pods-BLE StoicaTests.modulemap */,
+				CF055714A35A22242A6C4574109B6371 /* Pods-BLE StoicaTests-acknowledgements.markdown */,
+				5EABB2B760498D417D5395E557EFA4CD /* Pods-BLE StoicaTests-acknowledgements.plist */,
+				6B958FA9625295DD6852BCAEFBBE8BA2 /* Pods-BLE StoicaTests-dummy.m */,
+				249CE06465485A8FDABFCC865175725D /* Pods-BLE StoicaTests-frameworks.sh */,
+				C8568D710872A53D76E2D73A27AF1497 /* Pods-BLE StoicaTests-resources.sh */,
+				616F553117D6114E5DD73E9B98D84827 /* Pods-BLE StoicaTests-umbrella.h */,
+				559FC5F2E9BFD5E9354F2736A91D5641 /* Pods-BLE StoicaTests.debug.xcconfig */,
+				0775090E696EF9A64C87E02ACE43B325 /* Pods-BLE StoicaTests.release.xcconfig */,
+			);
+			name = "Pods-BLE StoicaTests";
+			path = "Target Support Files/Pods-BLE StoicaTests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		62E72A9AA346FCC62F91BBF366EA84FC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7918EFEC82E18C98AA01044E4A98FEFC /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DA2F52ADDD2749EDDAF22E683889FB7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E4A95D65FC150BA4908CC9F7E001EBF /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A35D03AADA1C166D31BDA78DF0BFA52A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49EA1BDE25C7D33D11688B07228E3E6A /* Pods-BLE Stoica-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE8F609FD9A244777DB6C3B5C55E822E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23F5940A08DB5F0B129F9DFF7CCC3452 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3229C694DA57E5D3316F35B49B2B9D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2C7F5CBAEB580584B08A148CF70513 /* Pods-BLE StoicaTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED21C42B928C9772669A1B90B565D121 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D0ED18240FC9EB34A8B1632E341B6AD /* Pods-BLE StoicaUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		26310D426C5F8C1E326F288C6AAADCED /* Pods-BLE Stoica */ = {
+		651B0BDA8043238CCAD30D1FBB417232 /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E16A7BCBCFF360AEE7BEADE801E8F49F /* Build configuration list for PBXNativeTarget "Pods-BLE Stoica" */;
+			buildConfigurationList = 58C875729C78BBB5A0FA5D2C0C3FE79B /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				05EEBF9DB2CFAEC019C3A1D9943169BA /* Sources */,
-				A81DAE583BDCDB7B6AA5DE9DA6F1A322 /* Frameworks */,
+				C974153E071B1E9971BC59116D021428 /* Sources */,
+				FE6878794FB18178E268DE8E2312941E /* Frameworks */,
+				9DA2F52ADDD2749EDDAF22E683889FB7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A8CF8130E585D97F2FA88FE228FB93E /* PBXTargetDependency */,
+				4110637C54DC789DAD1E300E715C0523 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = FFA9498F73A3D56F62833F4B42ABD829 /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		74EB4B2711BBF449ED083842EE4E8865 /* Pods-BLE StoicaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 228059E64A76F32D5DCC9FB3BAF074F6 /* Build configuration list for PBXNativeTarget "Pods-BLE StoicaTests" */;
+			buildPhases = (
+				F51C086FC1975702AD3A424C59E98A87 /* Sources */,
+				4E22B3EC7FF6DF09D790AFA6C9074904 /* Frameworks */,
+				C3229C694DA57E5D3316F35B49B2B9D6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41BE54C46B2CC0711BDC9291E93CEEBB /* PBXTargetDependency */,
+				E37D1AD24C098EE0B831E2DA81E1A2A8 /* PBXTargetDependency */,
+			);
+			name = "Pods-BLE StoicaTests";
+			productName = "Pods-BLE StoicaTests";
+			productReference = AE4989CC04587A21D797EE9A4855F56A /* Pods_BLE_StoicaTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7FDC0E7B47876C18224F9727121CA53B /* Pods-BLE Stoica */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A653181C91B1052474DD2828C6E333E2 /* Build configuration list for PBXNativeTarget "Pods-BLE Stoica" */;
+			buildPhases = (
+				403AA4E4055A71F77DE0065E29DBEA85 /* Sources */,
+				E8C9F3902825DB454B5CC1CF48F48801 /* Frameworks */,
+				A35D03AADA1C166D31BDA78DF0BFA52A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F85983FD3762FCD539AF5D3F4AE9B740 /* PBXTargetDependency */,
+				B12DE784460301DA7AA5B0EC21ED382D /* PBXTargetDependency */,
+			);
+			name = "Pods-BLE Stoica";
+			productName = "Pods-BLE Stoica";
+			productReference = 587792E9A9A89A9DC0795AB537538172 /* Pods_BLE_Stoica.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		92B11976D53F0966F39CD489D1CAE0CE /* Pods-BLE StoicaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F4A51534E59B566D61C7CF1B1A6B238 /* Build configuration list for PBXNativeTarget "Pods-BLE StoicaUITests" */;
+			buildPhases = (
+				5694BFC4ABC328626953A5C0461006E1 /* Sources */,
+				9068B6FF953F57C959D4B7FA1038FD28 /* Frameworks */,
+				ED21C42B928C9772669A1B90B565D121 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				499943B9D27FB105B894CAD0E6BC0DFE /* PBXTargetDependency */,
+				86E2C80F2C2ED002B37E9F28BFDEEB7D /* PBXTargetDependency */,
+			);
+			name = "Pods-BLE StoicaUITests";
+			productName = "Pods-BLE StoicaUITests";
+			productReference = FD4524DA88057D36D2C7851F59B091FB /* Pods_BLE_StoicaUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B9A04D3C9B208813656510FDA8ADAE02 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AF45366202C75BFCB13738AB00EC1DF /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				857F4306B6C6D8D06B3382A44BD3CD69 /* Sources */,
+				CBEEDA6A29AD33FB9CFD183DA7A8F5B4 /* Frameworks */,
+				BE8F609FD9A244777DB6C3B5C55E822E /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-BLE Stoica";
-			productName = "Pods-BLE Stoica";
-			productReference = 30B9ABA382242FF3E6EE1D723BBE5D69 /* libPods-BLE Stoica.a */;
-			productType = "com.apple.product-type.library.static";
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = EB4CB50B42FA0112BD3CB968CB68AC93 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F97CFF46E3B10C2A6A4D51786E7C07E7 /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C61A9E3998C3E0461952B0E35C03C393 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				F1F6447A6E39A67961B34209FE179458 /* Sources */,
+				EA97430D449D9D0A4AE6CC26BA4B0CE0 /* Frameworks */,
+				62E72A9AA346FCC62F91BBF366EA84FC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 90AFA7E506419302BE0B4149C0E4C259 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -219,36 +608,217 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				26310D426C5F8C1E326F288C6AAADCED /* Pods-BLE Stoica */,
+				F97CFF46E3B10C2A6A4D51786E7C07E7 /* Alamofire */,
+				651B0BDA8043238CCAD30D1FBB417232 /* Pods */,
+				7FDC0E7B47876C18224F9727121CA53B /* Pods-BLE Stoica */,
+				74EB4B2711BBF449ED083842EE4E8865 /* Pods-BLE StoicaTests */,
+				92B11976D53F0966F39CD489D1CAE0CE /* Pods-BLE StoicaUITests */,
+				B9A04D3C9B208813656510FDA8ADAE02 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		05EEBF9DB2CFAEC019C3A1D9943169BA /* Sources */ = {
+		403AA4E4055A71F77DE0065E29DBEA85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63ED66963556AA601F19189B2B58F3BD /* Pods-BLE Stoica-dummy.m in Sources */,
+				45C05E20EE8A9AE570D6B213D9F979BA /* Pods-BLE Stoica-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5694BFC4ABC328626953A5C0461006E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6016DBA4E8F5141FCD35151D34F7403 /* Pods-BLE StoicaUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		857F4306B6C6D8D06B3382A44BD3CD69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90EF20BB8DC0A183A97CEE5D4BE375EE /* SwiftyJSON-dummy.m in Sources */,
+				39A8A7DB3537BDC61EF618B1737C1EB5 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C974153E071B1E9971BC59116D021428 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB13761EE351C1DF6DE50A49781092BD /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1F6447A6E39A67961B34209FE179458 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80B815B1D7F3C0E255AE6BF79FFE54C5 /* Alamofire-dummy.m in Sources */,
+				D8FC7C04DC43091E653F8299B825C2B6 /* Alamofire.swift in Sources */,
+				C03E8B46EDF986A29C094D01658F5C7B /* Download.swift in Sources */,
+				3545684FB3078B438E6DB6A603FE5BB2 /* Error.swift in Sources */,
+				5FB4EA85CD7BD0C88EB07C558A073B28 /* Manager.swift in Sources */,
+				62E94A90A393155D012B719C50103C4C /* MultipartFormData.swift in Sources */,
+				2B567563DD2EB7E21C2160BC25691856 /* ParameterEncoding.swift in Sources */,
+				340619C852D7689C15677AD364D42666 /* Request.swift in Sources */,
+				B035D1C52F8E20B0258490097401AA4B /* ResponseSerialization.swift in Sources */,
+				5B886F18AF6C2EA293459374F6A50F98 /* Result.swift in Sources */,
+				245C698B199D665DBCE45BB2EC21C3C4 /* ServerTrustPolicy.swift in Sources */,
+				27AAB05FA022EC35CD8E10A934E7ABE6 /* Stream.swift in Sources */,
+				039D878A00D9F83FF0C8717D01DD4FAF /* Upload.swift in Sources */,
+				5814A80B18B3B869B13AF95B55F08BB4 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F51C086FC1975702AD3A424C59E98A87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E35CD9B4D7D027EE38EB544A55217007 /* Pods-BLE StoicaTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4110637C54DC789DAD1E300E715C0523 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = B9A04D3C9B208813656510FDA8ADAE02 /* SwiftyJSON */;
+			targetProxy = 4BFD41823ED408CA8A77ABFDE4059CE2 /* PBXContainerItemProxy */;
+		};
+		41BE54C46B2CC0711BDC9291E93CEEBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = F97CFF46E3B10C2A6A4D51786E7C07E7 /* Alamofire */;
+			targetProxy = F54E3335BD258EC9407A3F3B147F5A71 /* PBXContainerItemProxy */;
+		};
+		499943B9D27FB105B894CAD0E6BC0DFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = F97CFF46E3B10C2A6A4D51786E7C07E7 /* Alamofire */;
+			targetProxy = A79B52701CDD1ACC4FF376B43D7ABA35 /* PBXContainerItemProxy */;
+		};
+		86E2C80F2C2ED002B37E9F28BFDEEB7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = B9A04D3C9B208813656510FDA8ADAE02 /* SwiftyJSON */;
+			targetProxy = EC9445825149F9728D1B172045ED2C7E /* PBXContainerItemProxy */;
+		};
+		8A8CF8130E585D97F2FA88FE228FB93E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = F97CFF46E3B10C2A6A4D51786E7C07E7 /* Alamofire */;
+			targetProxy = 78058B0D674C932B466898E4504C0D60 /* PBXContainerItemProxy */;
+		};
+		B12DE784460301DA7AA5B0EC21ED382D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = B9A04D3C9B208813656510FDA8ADAE02 /* SwiftyJSON */;
+			targetProxy = 043E9EB7C68A79ECE766F552D7507FC5 /* PBXContainerItemProxy */;
+		};
+		E37D1AD24C098EE0B831E2DA81E1A2A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = B9A04D3C9B208813656510FDA8ADAE02 /* SwiftyJSON */;
+			targetProxy = B22D792707C8EEE0089528A8725F788B /* PBXContainerItemProxy */;
+		};
+		F85983FD3762FCD539AF5D3F4AE9B740 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = F97CFF46E3B10C2A6A4D51786E7C07E7 /* Alamofire */;
+			targetProxy = A92F817E99DD6AA643AFAF9CF4CE1A07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		4007B1D059095DDAF4C7F2F79F2EC2E1 /* Release */ = {
+		08335110766CCB50D0B58F11A5FFBC9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CACD3CC545C8C56701C6660ABB8DB0D /* Pods-BLE Stoica.release.xcconfig */;
+			baseConfigurationReference = C1632633049D5261CFDCE300BA7F3AB3 /* Pods-BLE Stoica.release.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BLE Stoica/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BLE Stoica/Pods-BLE Stoica.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pods_BLE_Stoica;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		13F9AE23F2FCC9D28E81EABECF8BB513 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B52D78868F05B047BAD62167F3D7A91 /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2D6732F36C8DADB42E641FB428942B0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A27FEB862EEA34D4A4EC4BDC6E1B9A91 /* Pods-BLE StoicaUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BLE StoicaUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BLE StoicaUITests/Pods-BLE StoicaUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BLE_StoicaUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -283,6 +853,180 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F295F3E08D9C17208EC03DFB6AE4E67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCF292AC29E2F922B587FEE290DA3B3F /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6C2B3079137EA9A131F2A0DC808F814D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE6431D8D7EFA238E472F7F31141257C /* SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2.2.1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6D16C6A6C97D43A7E8AED47E33FEE1C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51DE81A3FE502F32BD9B61F7A4FB7B47 /* Pods-BLE Stoica.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BLE Stoica/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BLE Stoica/Pods-BLE Stoica.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BLE_Stoica;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		889C2F37F8F4913976E742D89578C050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0775090E696EF9A64C87E02ACE43B325 /* Pods-BLE StoicaTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BLE StoicaTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BLE StoicaTests/Pods-BLE StoicaTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BLE_StoicaTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9DDF2D1FBD96206F5F4A2078FEB82763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 618DE80F3ABB9C152CA665946EA5D47D /* Pods-BLE StoicaUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BLE StoicaUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BLE StoicaUITests/Pods-BLE StoicaUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BLE_StoicaUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E97CF21C24963D943CB712AF23A5ABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09A2F74D6608C860A648C335E2E444C4 /* Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2.0.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -325,25 +1069,112 @@
 			};
 			name = Debug;
 		};
-		F3E093BF10775BEE65A1BA96E7BF629F /* Debug */ = {
+		BA20CE246B6158EF1CCF9FC62A9EE9D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27241CE065FB1AA1D97667A80A50A1D1 /* Pods-BLE Stoica.debug.xcconfig */;
+			baseConfigurationReference = 559FC5F2E9BFD5E9354F2736A91D5641 /* Pods-BLE StoicaTests.debug.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BLE StoicaTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BLE StoicaTests/Pods-BLE StoicaTests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Pods_BLE_StoicaTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D6876775F143468777D185D964D587EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE6431D8D7EFA238E472F7F31141257C /* SwiftyJSON-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2.2.1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E5E2C8FBCCBED4113F37EEEBECF64977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09A2F74D6608C860A648C335E2E444C4 /* Alamofire-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2.0.0;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1F4A51534E59B566D61C7CF1B1A6B238 /* Build configuration list for PBXNativeTarget "Pods-BLE StoicaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DDF2D1FBD96206F5F4A2078FEB82763 /* Debug */,
+				2D6732F36C8DADB42E641FB428942B0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		228059E64A76F32D5DCC9FB3BAF074F6 /* Build configuration list for PBXNativeTarget "Pods-BLE StoicaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA20CE246B6158EF1CCF9FC62A9EE9D0 /* Debug */,
+				889C2F37F8F4913976E742D89578C050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -353,11 +1184,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E16A7BCBCFF360AEE7BEADE801E8F49F /* Build configuration list for PBXNativeTarget "Pods-BLE Stoica" */ = {
+		58C875729C78BBB5A0FA5D2C0C3FE79B /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F3E093BF10775BEE65A1BA96E7BF629F /* Debug */,
-				4007B1D059095DDAF4C7F2F79F2EC2E1 /* Release */,
+				5F295F3E08D9C17208EC03DFB6AE4E67 /* Debug */,
+				13F9AE23F2FCC9D28E81EABECF8BB513 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AF45366202C75BFCB13738AB00EC1DF /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C2B3079137EA9A131F2A0DC808F814D /* Debug */,
+				D6876775F143468777D185D964D587EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A653181C91B1052474DD2828C6E333E2 /* Build configuration list for PBXNativeTarget "Pods-BLE Stoica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D16C6A6C97D43A7E8AED47E33FEE1C4 /* Debug */,
+				08335110766CCB50D0B58F11A5FFBC9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C61A9E3998C3E0461952B0E35C03C393 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5E2C8FBCCBED4113F37EEEBECF64977 /* Debug */,
+				9E97CF21C24963D943CB712AF23A5ABC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16E168F014714A44FD5C0DD0 /* Pods_BLE_Stoica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206D68E6F8370FE2F6E61309 /* Pods_BLE_Stoica.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		727306BA1B83CAA700FCDE09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727306B91B83CAA700FCDE09 /* AppDelegate.swift */; };
 		727306BC1B83CAA700FCDE09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727306BB1B83CAA700FCDE09 /* ViewController.swift */; };
 		727306BF1B83CAA700FCDE09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 727306BD1B83CAA700FCDE09 /* Main.storyboard */; };
@@ -15,7 +16,9 @@
 		727306CF1B83CAA800FCDE09 /* BLE_StoicaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727306CE1B83CAA800FCDE09 /* BLE_StoicaTests.swift */; };
 		727306DA1B83CAA800FCDE09 /* BLE_StoicaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727306D91B83CAA800FCDE09 /* BLE_StoicaUITests.swift */; };
 		727306E81B83CE9D00FCDE09 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 727306E71B83CE9D00FCDE09 /* CoreLocation.framework */; };
-		9F5B9E19059655F0C5529D94 /* libPods-BLE Stoica.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DEF7177EC5EB673B3E7312 /* libPods-BLE Stoica.a */; };
+		727F67941B919C4A00FCEBDB /* HueService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727F67931B919C4A00FCEBDB /* HueService.swift */; };
+		72E5FACC1B91A88500B50EFA /* BeaconLocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E5FACB1B91A88500B50EFA /* BeaconLocationDelegate.swift */; };
+		7D85A4E5240FC7E9F26FF5F6 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FCFCA2DEA45F1146A7ADDC /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		206D68E6F8370FE2F6E61309 /* Pods_BLE_Stoica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLE_Stoica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		727306B61B83CAA700FCDE09 /* BLE Stoica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLE Stoica.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		727306B91B83CAA700FCDE09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		727306BB1B83CAA700FCDE09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,9 +54,11 @@
 		727306D91B83CAA800FCDE09 /* BLE_StoicaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLE_StoicaUITests.swift; sourceTree = "<group>"; };
 		727306DB1B83CAA800FCDE09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		727306E71B83CE9D00FCDE09 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		727F67931B919C4A00FCEBDB /* HueService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HueService.swift; sourceTree = "<group>"; };
+		72E5FACB1B91A88500B50EFA /* BeaconLocationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconLocationDelegate.swift; sourceTree = "<group>"; };
 		AD617EF3DBE09CFCE9BD59D2 /* Pods-BLE Stoica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLE Stoica.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLE Stoica/Pods-BLE Stoica.release.xcconfig"; sourceTree = "<group>"; };
 		E64E71225F5B713327A4CEBB /* Pods-BLE Stoica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLE Stoica.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLE Stoica/Pods-BLE Stoica.debug.xcconfig"; sourceTree = "<group>"; };
-		E7DEF7177EC5EB673B3E7312 /* libPods-BLE Stoica.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BLE Stoica.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3FCFCA2DEA45F1146A7ADDC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +67,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				727306E81B83CE9D00FCDE09 /* CoreLocation.framework in Frameworks */,
-				9F5B9E19059655F0C5529D94 /* libPods-BLE Stoica.a in Frameworks */,
+				16E168F014714A44FD5C0DD0 /* Pods_BLE_Stoica.framework in Frameworks */,
+				7D85A4E5240FC7E9F26FF5F6 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +120,8 @@
 				727306C01B83CAA700FCDE09 /* Assets.xcassets */,
 				727306C21B83CAA700FCDE09 /* LaunchScreen.storyboard */,
 				727306C51B83CAA700FCDE09 /* Info.plist */,
+				727F67931B919C4A00FCEBDB /* HueService.swift */,
+				72E5FACB1B91A88500B50EFA /* BeaconLocationDelegate.swift */,
 			);
 			path = "BLE Stoica";
 			sourceTree = "<group>";
@@ -139,7 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				727306E71B83CE9D00FCDE09 /* CoreLocation.framework */,
-				E7DEF7177EC5EB673B3E7312 /* libPods-BLE Stoica.a */,
+				206D68E6F8370FE2F6E61309 /* Pods_BLE_Stoica.framework */,
+				F3FCFCA2DEA45F1146A7ADDC /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,6 +175,7 @@
 				727306B31B83CAA700FCDE09 /* Frameworks */,
 				727306B41B83CAA700FCDE09 /* Resources */,
 				F9EE832BA015F728AFFFA9A0 /* Copy Pods Resources */,
+				C9F554181B64CB776B199A03 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -302,6 +313,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		C9F554181B64CB776B199A03 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F9EE832BA015F728AFFFA9A0 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -314,7 +340,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BLE Stoica/Pods-BLE Stoica-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -324,6 +350,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				727F67941B919C4A00FCEBDB /* HueService.swift in Sources */,
+				72E5FACC1B91A88500B50EFA /* BeaconLocationDelegate.swift in Sources */,
 				727306BC1B83CAA700FCDE09 /* ViewController.swift in Sources */,
 				727306BA1B83CAA700FCDE09 /* AppDelegate.swift in Sources */,
 			);

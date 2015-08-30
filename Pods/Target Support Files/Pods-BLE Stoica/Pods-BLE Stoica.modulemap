@@ -1,0 +1,6 @@
+framework module Pods_BLE_Stoica {
+  umbrella header "Pods-BLE Stoica-umbrella.h"
+
+  export *
+  module * { export * }
+}

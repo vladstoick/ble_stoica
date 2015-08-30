@@ -1,10 +1,23 @@
 PODS:
-  - BlueBarSDK (0.5)
+  - Alamofire (2.0.0-beta.1)
+  - SwiftyJSON (2.2.1)
 
 DEPENDENCIES:
-  - BlueBarSDK
+  - Alamofire (= 2.0.0-beta.1)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`, branch `xcode7`)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :branch: xcode7
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: f269523ac572979245baa99c8475eab73caf1e9b
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 SPEC CHECKSUMS:
-  BlueBarSDK: d1dcdce07e2c01fca0bee5e7ff0fbd7ec4707848
+  Alamofire: 96feccc1e48a735edb92395cf023ba4ed52bdb45
+  SwiftyJSON: ae2d0a3d68025d136602a33c4ee215091ced3e33
 
 COCOAPODS: 0.38.2

@@ -19,8 +19,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func didClickTurnOnButton(sender: AnyObject) {
+        HueService().turnOnLight(3)
+    }
 
-
+    @IBAction func didClickTurnOffButton(sender: AnyObject) {
+        HueService().turnOffLight(3)
+    }
 
 }
 

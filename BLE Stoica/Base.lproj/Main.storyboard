@@ -16,6 +16,22 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5E-fj-VGU">
+                                <rect key="frame" x="195" y="163" width="52" height="30"/>
+                                <state key="normal" title="Turn on"/>
+                                <connections>
+                                    <action selector="didClickTurnOnButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wG2-dw-CLK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckL-iK-2tk">
+                                <rect key="frame" x="194" y="194" width="54" height="30"/>
+                                <state key="normal" title="Turn off"/>
+                                <connections>
+                                    <action selector="didClickTurnOffButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UUc-VD-1AZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>

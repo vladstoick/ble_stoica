@@ -1,0 +1,6 @@
+framework module Pods_BLE_StoicaUITests {
+  umbrella header "Pods-BLE StoicaUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

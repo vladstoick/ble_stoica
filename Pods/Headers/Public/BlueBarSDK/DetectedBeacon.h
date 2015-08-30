@@ -1,1 +1,0 @@
-../../../BlueBarSDK/SDK/BlueBarSDK/includes/Model/DetectedBeacon.h
