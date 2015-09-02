@@ -35,15 +35,13 @@ class BeaconLocationDelegate: NSObject, CLLocationManagerDelegate {
             return
         }
         
-        if(nearestBeacon.proximity == CLProximity.Immediate ||
-            nearestBeacon.proximity == CLProximity.Near){
+        if(nearestBeacon.proximity == CLProximity.Immediate){
             hueService.turnOnLight(3)
         } else {
             hueService.turnOffLight(3)
         }
         
         lastProximity = nearestBeacon.proximity;
-//        sendLocationNotification("Welcome home! Home sweet home!")
     }
     
     func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {

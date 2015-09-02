@@ -10,9 +10,16 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
+protocol HueServiceDelegate{
+    
+}
+
 class HueService {
+    
     let user = "82c96b92b795c376aca0fd13694d3b"
     let ip = "http://192.168.0.2/api/"
+    
+    
     func turnOnLight(lightID:Int){
         toggleStateForLight(lightID, state: true)
     }
@@ -36,5 +43,13 @@ class HueService {
         let url = ip + user + "/lights/" + String(lightID) + "/state"
         let params = ["on":state]
         Alamofire.request(Method.PUT, url,parameters: params, encoding: .JSON)
+            .responseJSON { _, _, result in
+                let obj = [ "state": state, "lightId": lightID ]
+                let notification = NSNotification(name: "hueStateChanged", object: obj)
+                NSNotificationCenter
+                    .defaultCenter()
+                    .postNotification(notification)
+            }
+
     }
 }

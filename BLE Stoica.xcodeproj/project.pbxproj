@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		16E168F014714A44FD5C0DD0 /* Pods_BLE_Stoica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206D68E6F8370FE2F6E61309 /* Pods_BLE_Stoica.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		727306BA1B83CAA700FCDE09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727306B91B83CAA700FCDE09 /* AppDelegate.swift */; };
-		727306BC1B83CAA700FCDE09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727306BB1B83CAA700FCDE09 /* ViewController.swift */; };
+		727306BC1B83CAA700FCDE09 /* HueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727306BB1B83CAA700FCDE09 /* HueViewController.swift */; };
 		727306BF1B83CAA700FCDE09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 727306BD1B83CAA700FCDE09 /* Main.storyboard */; };
 		727306C11B83CAA700FCDE09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727306C01B83CAA700FCDE09 /* Assets.xcassets */; };
 		727306C41B83CAA700FCDE09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 727306C21B83CAA700FCDE09 /* LaunchScreen.storyboard */; };
@@ -42,7 +42,7 @@
 		206D68E6F8370FE2F6E61309 /* Pods_BLE_Stoica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLE_Stoica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		727306B61B83CAA700FCDE09 /* BLE Stoica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLE Stoica.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		727306B91B83CAA700FCDE09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		727306BB1B83CAA700FCDE09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		727306BB1B83CAA700FCDE09 /* HueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueViewController.swift; sourceTree = "<group>"; };
 		727306BE1B83CAA700FCDE09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		727306C01B83CAA700FCDE09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		727306C31B83CAA700FCDE09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				727306B91B83CAA700FCDE09 /* AppDelegate.swift */,
-				727306BB1B83CAA700FCDE09 /* ViewController.swift */,
+				727306BB1B83CAA700FCDE09 /* HueViewController.swift */,
 				727306BD1B83CAA700FCDE09 /* Main.storyboard */,
 				727306C01B83CAA700FCDE09 /* Assets.xcassets */,
 				727306C21B83CAA700FCDE09 /* LaunchScreen.storyboard */,
@@ -352,7 +352,7 @@
 			files = (
 				727F67941B919C4A00FCEBDB /* HueService.swift in Sources */,
 				72E5FACC1B91A88500B50EFA /* BeaconLocationDelegate.swift in Sources */,
-				727306BC1B83CAA700FCDE09 /* ViewController.swift in Sources */,
+				727306BC1B83CAA700FCDE09 /* HueViewController.swift in Sources */,
 				727306BA1B83CAA700FCDE09 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
